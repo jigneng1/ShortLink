@@ -1,10 +1,16 @@
 {
     "version": 2,
-    "name": "shortlink-backend",
     "builds": [
-       { "src": "./build/app.js", "use": "@now/node" }
+        {
+            "src": "build/app.js",
+            "use": "@vercel/node",
+            "config": { "includeFiles": ["build/**"] }
+        }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "/" }
+        {
+            "src": "/(.*)",
+            "dest": "build/app.js"
+        }
     ]
- }
+}
