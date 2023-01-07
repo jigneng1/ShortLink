@@ -1,10 +1,9 @@
 import express from 'express';
 import { nanoid } from 'nanoid';
-import Url from '../models/Url.js';
-import { validateUrl } from '../utils/utils.js';
+import Url from '../models/Url';
+import { validateUrl } from '../utils/utils'
 import dotenv from 'dotenv';
-dotenv.config({ path: '../config/.env' });
-
+dotenv.config();
 const router = express.Router();
 
 // Short URL Generator
