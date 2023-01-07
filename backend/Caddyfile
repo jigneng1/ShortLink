@@ -1,5 +1,0 @@
-short-api-stthi.io{
-    reverse_proxy url-shortener-server:8000{
-        header_down Strict-Transport-Security max-age=31536000;
-    }
-}
