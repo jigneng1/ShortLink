@@ -16,7 +16,8 @@ var app = (0, express_1.default)();
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
-    origin: process.env.corsOrigin
+    origin: process.env.CORS_ORIGIN,
+    credentials: true,
 }));
 app.get("/", function (req, res) {
     res.send("welcome to stthi shortUrl backend");
