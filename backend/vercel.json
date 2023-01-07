@@ -2,9 +2,9 @@
     "version": 2,
     "name": "shortlink-backend",
     "builds": [
-       { "src": "./build/app.js", "use": "@now/node" }
+       { "src": "app.js", "use": "@now/node" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "app.js" }
+       { "src": "./build(.*)", "dest": "app.js" }
     ]
  }
