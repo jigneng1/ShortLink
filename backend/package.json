@@ -2,12 +2,11 @@
   "name": "shortlink-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app.js",
-    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
