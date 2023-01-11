@@ -25,7 +25,7 @@ export default function App() {
   //function
   function onSend() {
     axios
-      .post(`${SERVER_ENDPOINTS}/api/short`, { origUrl: url, path: link })
+      .post(`/api/short`, { origUrl: url, path: link })
       .then((e) => seturlwa(e.data.urlId))
       .then(() => handleOpen())
       .catch((error) => alert("ใส่ url ผิดคั้บ"));
@@ -48,7 +48,7 @@ export default function App() {
             this is your shortURL
           </Typography>
           <Box className="mt-2">
-            <Link href={`${SERVER_ENDPOINTS}/${urlwa}`} rel="noopener" target={"_blank"}>{`${SERVER_ENDPOINTS}/${urlwa}`}</Link>
+            <Link href={`https://s.stthi.com/${urlwa}`} rel="noopener" target={"_blank"}>{`https://s.stthi.com/${urlwa}`}</Link>
           </Box>
         </Box>
       </Modal>
